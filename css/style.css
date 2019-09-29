@@ -2,31 +2,37 @@ html,
 body {
     overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
-
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
 a.nav-link {
   color: #FFF;
 }
-
-.video-jumbotron {
+.navbar-toggler-icon {
+  color: #FFF;
+}
+.container-fluid {
   position: relative;
   overflow: hidden;
+  padding: 0;
 }
 
-#video-bg{
-  z-index: -1;
+.video-bg{
+  z-index: -1000;
   position: absolute;
   top:0;
-  min-width: 100%; 
-  min-height: 100%;
+  width: 100%;
+  height: auto;
   filter: brightness(75%);
 }
 .cover-container {
-  margin: 10em 0;
+  overflow: hidden;
+
 }
 .jumbotron-heading {
   text-align: center;
   color: #FFF;
-  font-size: 51px;
+  font-size: 40px;
   font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
 }
 
@@ -43,4 +49,29 @@ p.lead2{
 }
 .lead2 .form-control {
   width: 25em;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    position: fixed;
+  }
+  .cover-container {
+    overflow: hidden;
+    position: relative;
+  }
+  .jumbotron-heading {
+  text-align: center;
+  color: #FFF;
+  font-size: 30px;
+  font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
+  }
+  p.lead {
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
+  }
+  .lead2 .form-control {
+  width: auto;
+  }
 }
