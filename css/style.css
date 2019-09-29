@@ -1,0 +1,46 @@
+html,
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+a.nav-link {
+  color: #FFF;
+}
+
+.video-jumbotron {
+  position: relative;
+  overflow: hidden;
+}
+
+#video-bg{
+  z-index: -1;
+  position: absolute;
+  top:0;
+  min-width: 100%; 
+  min-height: 100%;
+  filter: brightness(75%);
+}
+.cover-container {
+  margin: 10em 0;
+}
+.jumbotron-heading {
+  text-align: center;
+  color: #FFF;
+  font-size: 51px;
+  font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
+}
+
+p.lead {
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+  font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
+}
+p.lead2{
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+.lead2 .form-control {
+  width: 25em;
+}
