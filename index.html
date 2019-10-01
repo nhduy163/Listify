@@ -11,49 +11,65 @@
 	<script src="./js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="video-jumbotron">
-	<nav class="navbar navbar-expand-sm">
-	  <!-- Brand -->
-	  <a class="navbar-brand" href="#">
-	  	<img src="https://listify-demos.astoundify.com/rentals/wp-content/uploads/sites/6/2016/09/listify-logo-rentals-white.svg">
-	  </a>
-
-	  <!-- Links -->
-	  <ul class="nav navbar-nav ml-auto">
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Blog</a>
-	    </li>
+<nav class="navbar navbar-expand-sm navbar-light fixed-top">
+  <!-- Brand -->
+	<a class="navbar-brand" href="#">
+		<img class="img-responsive"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+  <!-- Links -->
+  	<div class="collapse navbar-collapse" id="navbarText">
+	    <ul class="nav navbar-nav ml-auto">
+		    <li class="nav-item" >
+		     	<a id="nav-items" class="nav-link" href="#">Blog</a>
+		    </li>
 
 	    <!-- Dropdown -->
-	    <li class="nav-item dropdown">
-	      	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Learn</a>
-	      <div class="dropdown-menu">
-	        <a class="dropdown-item" href="#">How it Works</a>
-	        <a class="dropdown-item" href="#">Pricing Plans</a>
-	      </div>	
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Log in</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">Sign up</a>
-	    </li>
-	  </ul>
-	</nav>
-		<video autoplay loop muted id="video-bg">
-			<source src="https://s17315.pcdn.co/wp-content/uploads/2016/08/listify-rental-video-bg-compressed.mp4">
-		</video>
-	<div class="cover-container pb-5">
-		<div class="cover-inner container">
-			<h1 class="jumbotron-heading">Stay in Style</h1>
-			<p class="lead">Listify helps you find vacation rentals wherever you want to visit, Let's explore.</p>
-			<p class="lead2">
-			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			  <button class="btn btn-danger" type="submit">Search</button>
-			</p>
-	</div>
+		    <li class="nav-item dropdown">
+		      	<a id="nav-items" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Learn</a>
+		      <div class="dropdown-menu">
+		        <a id="nav-items-dropdown" class="dropdown-item" href="#">How it Works</a>
+		        <a id="nav-items-dropdown" class="dropdown-item" href="#">Pricing Plans</a>
+		      </div>	
+		    </li>
+		    <li class="nav-item">
+		     	<a id="nav-items" class="nav-link" href="#">Log in</a>
+		    </li>
+		    <li class="nav-item">
+		     	<a id="nav-items" class="nav-link" href="#">Sign up</a>
+		    </li>
+	  	</ul>
+  	</div>
+</nav>
+		<!-- Video-background -->
+
+<div class="jumbotron jumbotron-fluid">
+	<video autoplay muted loop >
+	    <source src="./video.mp4" type="video/mp4">
+	</video>
+  	<div class="caption text-white text-center">
+		<h1>Stay in Style</h1>
+		<p>Listify helps you find vacation rentals wherever you want to visit, Let's explore.</p>
+		<form class="form-inline justify-content-center">
+		  <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">
+		  <button class="btn btn-danger" type="submit">Search</button>
+		</form>
+  	</div>
 </div>
-</div>  
+
+
+<section>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <p class="lead">The whole content is wrapped into <code>.video-background-holder</code>, this class is mainly used to set the content dimensions, location and the fallback background in case the browser doesn't support the video format.</p>
+        <p class="lead">Change your video source from <code>source</code> tag, and the overlay color from <code>.video-background-overlay</code>.</p>
+        <p class="lead">The content text wrapped into <code>.video-background-content</code> is vertically centered using flex utilities.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
