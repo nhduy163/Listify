@@ -34,6 +34,7 @@ body {
   overflow: hidden;
   background-color:black;
   margin: 0;
+  height: 712px;
 }
 
 .jumbotron video {
@@ -73,48 +74,140 @@ body {
   margin-top: 4rem;
 }
 .form-inline .form-control {
-  width: 20% ;
+  width: 22% ;
 }
 .form-inline .btn {
   width: auto ;
 }
 
-
-
-
-@media only screen and (max-width: 600px) {
-  .img-responsive {
-   content: url('../img/listify-logo-dark.svg')
-  }
-  .navbar {
-    position: relative;
-    background: none;
-    background-color:   #f8f8f8;
-  }
-  #nav-items{
-    color: #454545;
-  }
-  .caption {
-    margin: 1rem 0;
-    padding: 1rem 1.5rem;
-  }
-  .caption h1 {
-    font-size: 1rem;
-  }
-  .caption p{
-    font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
-    font-size: .7rem;
-  }
-  .form-inline {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-  }
-  .form-inline .form-control {
-    width: 100% ;
-    margin-bottom: 1rem;
-  }
-  .form-inline .btn {
-    width: 100% ;
-  }
+/*============ Deals===========*/
+.row h2 {
+  font-size: 38px;
+  font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
+  line-height: normal;
+  font-weight: bold;
+  color: #454545;
+  word-break: normal;
+  text-align: center;
 }
+.row p{
+  font-size: 15px;
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: normal;
+  font-weight: normal;
+  color: #686868;
+  text-align: center;
+}
+
+    /*============ Card ===========*/
+.card {
+  width: auto;
+}
+.card .img-container{
+  background-color: black;
+}
+.card .card-img-top{
+  opacity: 0.5;
+}
+.card-img-overlay {
+  color: white;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-img-overlay span {
+  font-family: sans-serif;
+  width: 23%;
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: red;
+  padding: 0 0.3em;
+}
+
+.card-img-overlay h6 {
+  font-size: 20px;
+  font-family: "Playfair Display",Georgia,Times,"Times New Roman", sans-serif;
+  margin-bottom: 0.75rem;
+}
+.card-img-overlay p {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.card-body {
+  display: flex;
+  position: relative;
+  padding: 1rem;
+}
+.card-body p {
+  margin: 0;
+}
+.clip-circle {
+  position: absolute;
+  right: 1rem;
+  bottom: 1.5rem;
+  width: 64px;
+  height: 64px;
+  clip-path: circle(32px at center);
+}
+.top-margin {
+  margin-top: 8em;
+}
+
+.top-buffer { 
+  margin-top: 3rem; 
+}
+
+
+
+
+/*============ Articles ===========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer_area{
+    background-color:#261d1e;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.footer_container{
+    text-align:center;
+}
+.footer_container .social_networks img{
+    width:1.2rem;  
+    margin: 1rem;
+    transition: all 0.3s;
+}
+.footer_container .social_networks img:hover{
+    opacity:0.5;
+    transform: translateY(-2px);
+}
+.footer_container .copyright{
+    font-size:1.2rem;
+}
+
+
+
+
+
+
+
+
+
+

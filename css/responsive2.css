@@ -1,0 +1,81 @@
+@media(max-width:575.98px){
+    .footer_area  {
+        font-size: 9px !important;
+    }
+    .img-responsive {
+     content: url('../img/listify-logo-dark.svg')
+    }
+    .navbar {
+      position: relative;
+      background: none;
+      background-color:   #f8f8f8;
+    }
+    #nav-items{
+      color: #454545;
+    }
+    .jumbotron {
+      height: auto;
+    }
+    .caption {
+      margin: 1rem 0;
+      padding: 1rem 1.5rem;
+    }
+    .caption h1 {
+      font-size: 1rem;
+    }
+    .caption p{
+      font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
+      font-size: .7rem;
+    }
+    .form-inline {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    .form-inline .form-control {
+      width: 100% ;
+      margin-bottom: 1rem;
+    }
+    .form-inline .btn {
+      width: 100% ;
+    }
+    .row-text {
+        padding: 0 15px;
+    }
+    .row h2 {
+        font-size: 22px;
+    }
+    .row p {
+        font-size: 13px;
+    }
+
+    .top-margin {
+      margin-top: 4em;
+    }
+
+    .top-buffer { 
+      margin-top: 1.5rem; 
+    }
+    .section_gap {
+        padding: 3rem 2rem;
+    }
+}
+
+
+@media(min-width:576px){
+    
+}
+
+@media(min-width:768px){
+    
+}
+
+@media(min-width:992px){
+    
+}
+
+
+@media (min-width:1200px){
+    
+    
+}
