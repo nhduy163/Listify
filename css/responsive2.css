@@ -57,7 +57,10 @@
       margin-top: 1.5rem; 
     }
     .section_gap {
-        padding: 3rem 2rem;
+        padding: 0 2rem;
+    }
+    .img-cover h3 {
+      font-size: auto;
     }
 }
 

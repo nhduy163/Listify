@@ -6,8 +6,10 @@ body {
     overflow-x: hidden; /* Prevent scroll on narrow devices */
     font-family: sans-serif;
 }
+a:link, a:visited a:hover {
+  text-decoration: none;
+}
 /*=========== navbar =============*/
-
 
 .navbar-brand {
   height: 4rem;
@@ -81,7 +83,7 @@ body {
 }
 
 /*============ Deals===========*/
-.row h2 {
+.row-text h2 {
   font-size: 38px;
   font-family: "Playfair Display",Georgia,Times,"Times New Roman",serif;
   line-height: normal;
@@ -90,7 +92,7 @@ body {
   word-break: normal;
   text-align: center;
 }
-.row p{
+.row-text p{
   font-size: 15px;
   font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: normal;
@@ -102,6 +104,7 @@ body {
     /*============ Card ===========*/
 .card {
   width: auto;
+  margin: 1rem 0;
 }
 .card .img-container{
   background-color: black;
@@ -160,22 +163,63 @@ body {
   margin-top: 3rem; 
 }
 
-
+.fa {
+  color: orange;
+}
 
 
 /*============ Articles ===========*/
 
+.blog-card {
+  width: auto;
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin: 2em 0;
+}
 
+.card-img-overlay-2 {
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  padding: 0 1.8rem;
+  padding-top:170px ;
+  text-shadow: rgba(0,0,0,.8) 0 1px 0
+}
 
+.blog-overlay .article-title {
+  color: white;
+  text-shadow: rgba(0,0,0,.8) 0 1px 0;
+  font-size: 21px;
+  font-weight: 400;
+}
+.blog-overlay .article-text {
+  color: white;
+  line-height: 2;
+}
 
+a.article-text:link, a.article-text:visited {
+  text-decoration: none;
+  color: #fff;
+}
 
-
-
-
-
-
-
-
+.article-title::selection {
+  background-color: red;
+}
+.article-text::selection {
+  background-color: red;
+}
+.row-text a {
+  background-color: #ef3652;
+  font-size: 15px;
+  line-height: normal;
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  border: 0;
+  border-radius: 3px;
+  padding: 18px 40px;
+  color: white;
+}
 
 
 
@@ -187,12 +231,14 @@ body {
     padding-bottom: 3rem !important;
 }
 .footer_container{
+    color: #454545;
     text-align:center;
 }
 .footer_container .social_networks img{
     width:1.2rem;  
     margin: 1rem;
     transition: all 0.3s;
+    opacity: 0.3;
 }
 .footer_container .social_networks img:hover{
     opacity:0.5;
