@@ -10,7 +10,9 @@ a:link, a:visited a:hover {
   text-decoration: none;
 }
 /*=========== navbar =============*/
-
+.navbar {
+  position: absolute;
+}
 .navbar-brand {
   height: 4rem;
   overflow: hidden;
