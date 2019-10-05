@@ -12,16 +12,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+
 
 button:hover {
   opacity: 0.8;
@@ -38,6 +29,7 @@ button:hover {
   border-radius: 3px;
   color: white;
   margin: 0 0 1em;
+  height: 3em;
 }
 .button-2 {
   background-color: #55acee;
@@ -47,11 +39,11 @@ button:hover {
   color: white;
   margin-right: 0.5em;
 }
-.btn-login {
+#btn-login {
   width: 30%;
+  height: 3em;
   border-radius: 3px;
   margin-right: 1em;
-
 }
 .input-container label {
   font-size: 18px;
@@ -79,18 +71,14 @@ button:hover {
   margin-bottom: .5em;
 }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
 
-.container {
+#modal-container {
   padding: 2.5em;
 }
-.container input {
+#modal-container input {
   border-radius: 3px;
 }
-.container label {
+#modal-container label {
   margin: 0;
 }
 .footer-form {
@@ -168,12 +156,20 @@ img.avatar {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
+@media screen and (max-width: 575.98px) {
+  .modal-content {
+    width: auto;
   }
-  .cancelbtn {
-     width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .modal-content {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .modal-content {
+    max-width: 35%;
+    width: auto;
   }
 }

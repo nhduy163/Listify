@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style2.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="./css/modal.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway&display=swap" rel="stylesheet">
 	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -36,16 +37,92 @@
 		        <a id="nav-items-dropdown" class="dropdown-item" href="./pricing.html">Pricing Plans</a>
 		      </div>	
 		    </li>
-		    <li class="nav-item">
-		     	<a id="nav-items" class="nav-link" href="#">Log in</a>
+		    <li data-toggle="collapse" data-target="#collapsibleNavbar" class="nav-item">
+		     	<a id="nav-items" class="nav-link" href="#" onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a>
 		    </li>
-		    <li class="nav-item">
-		     	<a id="nav-items" class="nav-link" href="#">Sign up</a>
+		    <li data-toggle="collapse" data-target="#collapsibleNavbar" class="nav-item">
+		     	<a id="nav-items" class="nav-link" href="#" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block';
+		     	" style="width:auto;">Sign up</a>
 		    </li>
 	  	</ul>
   	</div>
     </div>
 </nav>
+
+
+<!--================ modal ================-->
+
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container" id="modal-container">
+      <h3 >Login</h3>
+      <p class="top-buffer">Use a social account for faster login or easy registration.</p>
+      <button class="button-social">
+      	<i class="fa fa-facebook fa-lg"></i>
+      	Log in with Facebook	      
+      </button>	
+      <button class="button-social button-2">
+      	<i class="fa fa-twitter fa-lg"></i>
+      	Log in with Twitter
+      </button>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <div class="input-container">
+	      <button type="submit" class="btn-danger" id="btn-login">Login</button>
+	      <label>
+	        <input class="remember-cb" type="checkbox" checked="checked" name="remember"> Remember me
+	      </label>
+      </div>
+      <div class="footer-form">	      
+	      <a href="#" >Register</a>
+	      <a href="#" class="psw">Forgot password?</a> 
+      </div> 
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">s
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <h3 class="text-center">Register</h3>
+      <div class="label-container"> 
+      	<div class="label-content">
+      		<label for="fname"><b>First Name</b></label>
+      		<input type="text"  name="fname">
+      	</div>
+      	<div class="label-content">
+      		<label for="lname"><b>Last Name</b></label>
+      		<input type="text"  name="lname">
+      	</div>
+      </div>
+      <label for="uname"><b>Email address *</b></label>
+      <input type="text"  name="uname" required>
+      <label for="psw"><b>Password *</b></label>
+      <input type="password" name="psw" required>
+      <div class="input-container">
+	      <button type="submit" class="btn-danger" id="btn-login">Register</button>
+      </div>
+      <div class="footer-form">	      
+	      <a href="#" >Log In</a>
+      </div> 
+    </div>
+  </form>
+</div>
+
+
+
 
 <!-- ================= Background Image =============== -->
 <div class="container-fluid">
@@ -110,6 +187,7 @@
 		</div>
 	</div>
 </footer>
+<script src="./js/index.js"></script>
 
 </body>
 </html>
